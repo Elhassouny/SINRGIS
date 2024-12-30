@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>contact</title>
+</head>
+<body>
+    
+
+
+    <form id="formulaire-contact" onsubmit=afficherMessageEnvoi(event) method="POST" action="{% url 'contact' %}">
+        {% csrf_token %}
+    <h1>Contact us</h1>
+    <hr>
+    <div class="corps-formulaire">
+        <div class="gauche">
+        <div class="groupe">
+            <label for="name">Name</label>
+            <input type="text" autocomplete="off"  name="name"/>
+        </div>
+        <div class="groupe">
+            <label>E-mail</label>
+            <input type="text" autocomplete="off"  name="email"/>
+        </div>
+    </div>
+    <div class="droite">
+        <div class="groupe">
+            <label for="message">Message</label>
+            <textarea placeholder="Write here..." required name="message"></textarea>
+        </div>
+    </div>
+    </div>
+    <input type="submit" value="send">
+    </form>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: poppins, sans serif;;
+
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+background-color: #fff;
+padding: 10px;
+border-radius: 6px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+
+h1 {
+color: #fb911f;
+font-size: 20px;
+text-align: center;
+font-size: 25px;
+}
+hr {
+width: 100%;
+height: 1px;
+background-color: rgba(23,49,45);
+}
+form .corps-formulaire {
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 30px;
+}
+form .corps-formulaire .groupe {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input {
+margin-top: 5px;
+padding: 10px 5px 10px 30px;
+border: 1px solid #c9c9c9;
+outline-color: rgba(23,49,45);
+border-radius: 5px;
+}
+
+form .corps-formulaire .droite {
+margin-left: 40px;
+}
+form .corps-formulaire .droite .groupe {
+height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea {
+margin-top: 5px;
+padding: 10px;
+background-color: #f1f1f1;
+border: 2px solid rgba(23,49,45);
+outline: none;
+border-radius: 5px;
+resize: none;
+height: 72%;
+}
+
+input[type="submit"]{
+margin-top: 15px;
+background-color: rgb(23, 49, 45);;
+color: #fff;
+border: 1px solid rgb(23, 49, 45);;
+cursor: pointer;
+}
+
+
+</style>
+<div id="message-envoi"></div>
+<script>
+    function afficherMessageEnvoi(event) {
+      event.preventDefault(); // Empêche le comportement par défaut du formulaire
+
+    var messageEnvoi = document.getElementById("message-envoi");
+    messageEnvoi.innerText = "Your message has been sent successfully!";
+    setTimeout(function() {
+        messageEnvoi.innerText = "";
+      }, 10000); // Supprime le message après 10 secondes (10000 millisecondes)
+    }
+</script>
+</body>
+</html>
