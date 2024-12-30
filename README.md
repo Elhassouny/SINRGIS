@@ -1,5 +1,5 @@
 # SINRGIS : (pronounced as "Synergy GIS")
-## Sustainability Indicators for Natural Resource Management and Policy - Powered by AI and Remote Sensing datasets
+## Sustainability Indicators for Natural Resource Management and Policy - Powered by AI and Remote Sensing Datasets
 Welcome to **Sustainability Indicators**, a comprehensive platform designed to provide advanced insights into natural resource management and policy-making. It utilizes AI and Remote Sensing to provide real-time, data-driven insights for natural resource management and policy development. Monitor key indicators such as water, land, and ecosystem health, enabling sustainable, evidence-based decision-making. Our mission is to empower policymakers, researchers, and stakeholders with cutting-edge tools to monitor, analyze, and sustainably manage natural resources.
 
 ---
