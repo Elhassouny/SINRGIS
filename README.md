@@ -40,4 +40,12 @@ Welcome to **Sustainability Indicators**, a comprehensive platform designed to p
 
 ---
 
+## Research & Innovation
+This platform is built on cutting-edge research and innovation papers, supporting the latest advancements in AI and Remote Sensing for sustainable resource management.
+- A. Elhassouny, **Groundwater management using artificial intelligence and satellite imagery**,  Innovation-Driven Water Sustainability Conference (IDWSC), November 25 - 27, 2024 Jeddah, KSA (https://idwsc.com/speaker/154)
+- 
+- A. Elhassouny, **Care green unit and care green monitoring system: Ai support decision-making system in smart agriculture**, in CV4GC, CVPR 2019: IEEE Conference on Computer Vision and Pattern Recognition. IEEE, July 2019. (https://www.cv4gc.org/cvpr2019/)
+
+---
+
 Join us in shaping the future of sustainable natural resource management with the power of AI and Remote Sensing!
